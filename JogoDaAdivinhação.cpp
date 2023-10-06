@@ -14,9 +14,9 @@ int main(){
     cout << "***************************************************************************************" << endl;
     cout << nome_usuario << ", " << " Seja bem vindo ao jogo da adivinhação!" << endl; 
     cout << "Regras do jogo: " << endl;
-    cout << " O número secreto será sempre um número aleatório entre 0 e 100 " << endl;
-    cout << " Você pode jogar múltiplas vezes, e será contado no final de cada rodada sua pontuação." << endl;
-    cout << " No final de todas as suas rodadas, terá a pontuação total de todas suas rodadas." << endl;    
+    cout << "O número secreto será sempre um número aleatório entre 0 e 100 " << endl;
+    cout << "Você pode jogar múltiplas vezes, e será contado no final de cada rodada sua pontuação." << endl;
+    cout << "No final do jogo (Caso você tenha jogado mais de uma vez), conterá seu total de pontos." << endl;    
     cout << "****************************************************************************************" << endl;
     
     int num_de_tentativas;
@@ -101,9 +101,12 @@ int main(){
     }
     }
     cout << "*********************************************" << endl;
-    cout << "Você jogou " << i << " jogos." << endl;
-    cout << "Sua pontuação total foi de: " << pontos_ << " Pontos." << endl;
-    
-
+    if(i > 1){
+        cout << "Você jogou " << i << " jogos." << endl;
+        cout << "Sua pontuação total foi de: " << pontos_ << " Pontos." << endl;
+    }else{
+        cout << "Você jogou " << i << " jogo." << endl;
+        cout << "Sua pontuação total foi de: " << pontos_ << " Pontos." << endl;
+    }
     return 0;
 }
