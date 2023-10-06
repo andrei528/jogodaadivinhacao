@@ -82,10 +82,11 @@ int main(){
         cout << endl;
         cout << "Fim de jogo" << endl;
         cout << "Você perdeu!" << endl;
+        cout << "Sua pontuação: " << pontos << endl;
     }
     else{
         cout << "Número de tentativas: " << tentativas << endl;
-        cout << "Sua pontuação foi de: " << pontos << " Pontos" << endl;
+        cout << "Sua pontuação: " << pontos << " Pontos" << endl;
     }
     cout << "O número secreto era: " << NUMBER_SECRET << endl;
     cout << "******************************" << endl;
