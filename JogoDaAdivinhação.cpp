@@ -14,9 +14,9 @@ int main(){
     cout << "***************************************************************************************" << endl;
     cout << nome_usuario << ", " << " Seja bem vindo ao jogo da adivinhação!" << endl; 
     cout << "Regras do jogo: " << endl;
-    cout << "O número secreto será sempre um número aleatório entre 0 e 100 " << endl;
-    cout << "Você pode jogar múltiplas vezes, e será contado no final de cada rodada sua pontuação." << endl;
-    cout << "No final do jogo (Se voce jogou várias rodadas), aparecerá a pontuação total." << endl;    
+    cout << " O número secreto será sempre um número aleatório entre 0 e 100 " << endl;
+    cout << " Você pode jogar múltiplas vezes, e será contado no final de cada rodada sua pontuação." << endl;
+    cout << " No final de todas as suas rodadas, terá a pontuação total de todas suas rodadas." << endl;    
     cout << "****************************************************************************************" << endl;
     
     int num_de_tentativas;
@@ -27,13 +27,13 @@ int main(){
     char nivel_de_dificuldade;
     cin >> nivel_de_dificuldade;
 
-    if(nivel_de_dificuldade == 'F'){
+    if(nivel_de_dificuldade == 'F' || nivel_de_dificuldade == 'f'){
         num_de_tentativas = 15;
         break;
-    }else if(nivel_de_dificuldade == 'M'){
+    }else if(nivel_de_dificuldade == 'M' || nivel_de_dificuldade == 'm'){
         num_de_tentativas = 10;
         break;
-    }else if(nivel_de_dificuldade == 'D'){
+    }else if(nivel_de_dificuldade == 'D' || nivel_de_dificuldade == 'd'){
         num_de_tentativas = 5;
         break;
     }else{
